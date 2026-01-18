@@ -351,7 +351,7 @@ local function StartMeleeAura()
             [4] = "43TRFWX", [5] = "Normal", [6] = tick(), [7] = true
         }
         local result = remote1:InvokeServer(unpack(arg1))
-        task.wait(0.1)
+        task.wait(0.4)
 
         local tool = LocalPlayer.Character:FindFirstChildOfClass("Tool")
         if tool then
@@ -383,7 +383,7 @@ local function StartMeleeAura()
                     local hum = c and c:FindFirstChildOfClass("Humanoid")
                     if hrp2 and hum then
                         local dist = (hrp.Position - hrp2.Position).Magnitude
-                        if dist < 15 and hum.Health > 15 and not c:FindFirstChildOfClass("ForceField") then
+                        if dist < 10 and hum.Health > 15 and not c:FindFirstChildOfClass("ForceField") then
                             Attack(c)
                         end
                     end
@@ -747,3 +747,4 @@ end)
 
 
 -- Конец скрипта
+
