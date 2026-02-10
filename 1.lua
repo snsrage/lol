@@ -403,7 +403,7 @@ end
 
 -- Teleport Farm как в твоем скрипте
 local TPFarm_Enabled = false
-local TPFarm_TargetName = "StevenTheMan423"
+local TPFarm_TargetName = "geo12mix"
 
 local TPFarm_SteppedConnection = nil
 local TPFarm_RenderConnection = nil
@@ -747,6 +747,7 @@ end)
 
 
 -- Конец скрипта
+
 
 
 
